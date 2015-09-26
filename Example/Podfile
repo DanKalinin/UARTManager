@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'UARTManager_Example', :exclusive => true do
+  pod "UARTManager", :path => "../"
+  pod 'MBProgressHUD', '0.9.1'
+end
+
+target 'UARTManager_Tests', :exclusive => true do
+  pod "UARTManager", :path => "../"
+end

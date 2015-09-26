@@ -1,0 +1,17 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - UARTManager (0.1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (= 0.9.1)
+  - UARTManager (from `../`)
+
+EXTERNAL SOURCES:
+  UARTManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  UARTManager: fd0fa5aae245fff9de80b41667ca8855aeea3c10
+
+COCOAPODS: 0.38.2

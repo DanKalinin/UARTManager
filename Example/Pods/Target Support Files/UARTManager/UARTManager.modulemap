@@ -1,0 +1,6 @@
+framework module UARTManager {
+  umbrella header "UARTManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BA17A54610610CCF1CD6B4D93358F3 /* UARTCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5989A8BE6D9EAF429940B25EC1A931 /* UARTCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0457647319738BE930B9CAC5CDF63B1F /* UARTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC463C01018D684448DDB09B51DCA7E /* UARTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B93FD2115C231F971FAB16016158540 /* UARTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC43D4F9511D8F5593F2EE250127B23 /* UARTManager.m */; };
+		18423D5FB44712E24D73B138EBED8792 /* Pods-UARTManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8396F6E06162D0A3E77D6B82D81ECE90 /* Pods-UARTManager_Example-dummy.m */; };
+		26AE7901FAB71169A2CF160EACCA6772 /* UARTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 549C95F3F906B1A0B8F06044D5B43141 /* UARTConstants.m */; };
+		3847FE41DC41DCB4149500A6AC8289E0 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9690ECD193B7DAD3753F308637A549 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F5FCF07125D09B3B1F173C268057D31 /* UARTManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C76DEF976F893F4DFFADC425F5D4C2 /* UARTManager-dummy.m */; };
+		407089C1B0442D25372DDEB848C9BC07 /* NSError+UART.m in Sources */ = {isa = PBXBuildFile; fileRef = C81BA0B6B60915786892F9755F834152 /* NSError+UART.m */; };
+		40F20041805D54B66469364D9E621A23 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36925BA4F58387C756700504E2473784 /* MBProgressHUD-dummy.m */; };
+		4FE8660947738D2131EF2ACD363BEDE5 /* UARTManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43499EDA03176B408376164918BF0FC5 /* UARTManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		572D227394D6161C53F302281405F128 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA4E9C04FC04C5B9F1AAFF5DF493BCF /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		595FE887E4E44ACAFC001E266A620033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */; };
+		6723E9C02FC0BBB8C55DCDC694AB49AA /* Pods-UARTManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C51158CBA0CEC24966B5BADD3C516 /* Pods-UARTManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686087E9033076F69313526372D70D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776C8C6FA91DC26A941A9FD044716055 /* UIKit.framework */; };
+		788A37F097771A3507BC35DE5740AB7F /* UARTManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2042CF6AE04B4C73FE1046FC117BF1 /* UARTManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A45011CCA99CD8B3536A4ECC00D91F /* Pods-UARTManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B80FC398A2010C10175C6FD3E8D4901 /* Pods-UARTManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C09E53EE4C1EF772E564946F98AB04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */; };
+		81C56E38455BF734B4FE25BEAD2B795F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194E1A7740E08E1BD4FD96F85A756A4 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B4E341CD71DD58FE70BCE1D3D4A8E533 /* Pods-UARTManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 635A4B5180BC8437B164860DAF3DB3A4 /* Pods-UARTManager_Tests-dummy.m */; };
+		C2F48CD281B9CCE8CF4B585B76220889 /* NSError+UART.h in Headers */ = {isa = PBXBuildFile; fileRef = C3727874370CE1B8F05538CE263C702B /* NSError+UART.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB86BD83D8226E43667D24D14BB83926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */; };
+		D1466BC2BC27BB92662462D1BB9EEC40 /* CBPeripheral+UART.h in Headers */ = {isa = PBXBuildFile; fileRef = F94F8049D01AB8DEA9365B0F0F3D079F /* CBPeripheral+UART.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D391F325D670782F2146D777EEF7A622 /* UARTPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD1C866C1B6B8D659AB7E7A50A37D33 /* UARTPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED39166B549C611C79F882119C3C544B /* UARTCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B11288950B14595CCF9C01EB392BEE /* UARTCommand.m */; };
+		F9E87797C5858CC87A05CC635F83165E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B800331D522E9DCC03AABBAE5E1AE5 /* CoreGraphics.framework */; };
+		FDFA9A8E75FE05CCBBE8BFBDC816A9E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4F39DEB9C34AFAF3E95E102A5610428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9B8B980E1D12639475FD73CDCDC78B;
+			remoteInfo = UARTManager;
+		};
+		C24235599C1951E0EB22732D3F7B3E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23887CF4A87C1E42F56BF54B1E2A723F;
+			remoteInfo = MBProgressHUD;
+		};
+		CFC0BC5FFCA9B8296C6D76DDF6D83CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9B8B980E1D12639475FD73CDCDC78B;
+			remoteInfo = UARTManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034E36FF60A5B6BBC5522E4B147D579B /* UARTManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UARTManager.modulemap; sourceTree = "<group>"; };
+		0CA4E9C04FC04C5B9F1AAFF5DF493BCF /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1194E1A7740E08E1BD4FD96F85A756A4 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		11E4FA8DA6DD01CB4A100BF4D1F5B88A /* Pods-UARTManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UARTManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		12E9CE69EBFE8DF6DF218721F01EFEF3 /* Pods_UARTManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UARTManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		158262D2ACC70FA0863C428381F2140B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB83388576F6C3918F5AEEE99D4940D /* Pods-UARTManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UARTManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1DC463C01018D684448DDB09B51DCA7E /* UARTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UARTConstants.h; sourceTree = "<group>"; };
+		20B800331D522E9DCC03AABBAE5E1AE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2AEC95244AA2919CEDDA0F832FDDA4E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36925BA4F58387C756700504E2473784 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3FD1C866C1B6B8D659AB7E7A50A37D33 /* UARTPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UARTPacket.h; sourceTree = "<group>"; };
+		3FD53F095A07D7FED0B14383337B4133 /* Pods-UARTManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UARTManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		43499EDA03176B408376164918BF0FC5 /* UARTManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UARTManager.h; sourceTree = "<group>"; };
+		44B11288950B14595CCF9C01EB392BEE /* UARTCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UARTCommand.m; sourceTree = "<group>"; };
+		48E3CCA8B1517B279D0E8E60C4757489 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		500EB79D14E331FF2550F618B12D7BE0 /* UARTManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UARTManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549C95F3F906B1A0B8F06044D5B43141 /* UARTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UARTConstants.m; sourceTree = "<group>"; };
+		596CF5ED04E40DA98AB0D9ABE356DAC6 /* Pods-UARTManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UARTManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5D7CB798E29637C8E4CE797A2A10BBE4 /* Pods-UARTManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UARTManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		620C6FFC43DB91D0CFBCC6CD503DD674 /* Pods-UARTManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UARTManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		635A4B5180BC8437B164860DAF3DB3A4 /* Pods-UARTManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UARTManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		66705BE9DEC3835F581D8085F8216C95 /* UARTManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UARTManager.xcconfig; sourceTree = "<group>"; };
+		6B80FC398A2010C10175C6FD3E8D4901 /* Pods-UARTManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UARTManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		6C9690ECD193B7DAD3753F308637A549 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		776C8C6FA91DC26A941A9FD044716055 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		78C76DEF976F893F4DFFADC425F5D4C2 /* UARTManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UARTManager-dummy.m"; sourceTree = "<group>"; };
+		7A2042CF6AE04B4C73FE1046FC117BF1 /* UARTManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UARTManager-umbrella.h"; sourceTree = "<group>"; };
+		8396F6E06162D0A3E77D6B82D81ECE90 /* Pods-UARTManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UARTManager_Example-dummy.m"; sourceTree = "<group>"; };
+		847C51158CBA0CEC24966B5BADD3C516 /* Pods-UARTManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UARTManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		942506CAA83C096394CEF67D1546656C /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		94E8A11E2DC9443E0815995541AEF4E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963338C5854A5CD11E4C4E05749B0F59 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		97CDB5A17B6E188FFB33BE45A426C5DA /* Pods-UARTManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UARTManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9DFA26BD511454EB185141704762FBC1 /* Pods-UARTManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UARTManager_Example-resources.sh"; sourceTree = "<group>"; };
+		A231C3524332E87C15E3210F9C3D37B6 /* Pods-UARTManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UARTManager_Example.modulemap"; sourceTree = "<group>"; };
+		A42108D5DF4CD061441F9A7235ED7D14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B536CF2E4E043085FA5EB7491E8AD3B3 /* UARTManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UARTManager-Private.xcconfig"; sourceTree = "<group>"; };
+		B62DE59E1C321DF76D389F1A62E6026E /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C38E928A06F57A581319F5C59E0E10 /* Pods-UARTManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UARTManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C16771BD569DB8585E3ABD920E4B3C68 /* Pods-UARTManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UARTManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		C3727874370CE1B8F05538CE263C702B /* NSError+UART.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+UART.h"; sourceTree = "<group>"; };
+		C81BA0B6B60915786892F9755F834152 /* NSError+UART.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+UART.m"; sourceTree = "<group>"; };
+		C9D33AE49385292F1B200035888EEC19 /* Pods_UARTManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UARTManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC43D4F9511D8F5593F2EE250127B23 /* UARTManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UARTManager.m; sourceTree = "<group>"; };
+		D0FE8D4B0235B1FBE98CAD82E8BA77C1 /* Pods-UARTManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UARTManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DC62240A8802C163125BC943254B5DCE /* MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		DF5989A8BE6D9EAF429940B25EC1A931 /* UARTCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UARTCommand.h; sourceTree = "<group>"; };
+		E4EA13D0AB92F85611F474241D138FFA /* Pods-UARTManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UARTManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F94F8049D01AB8DEA9365B0F0F3D079F /* CBPeripheral+UART.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+UART.h"; sourceTree = "<group>"; };
+		FB06472909A71EE8CC42D35C3B6CB60A /* UARTManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UARTManager-prefix.pch"; sourceTree = "<group>"; };
+		FEFA1FBB919967AE39A59F11C8600373 /* Pods-UARTManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UARTManager_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3B00903DFDB561F3AA499E839A5D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595FE887E4E44ACAFC001E266A620033 /* Foundation.framework in Frameworks */,
+				686087E9033076F69313526372D70D66 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36147C235D2DC7A7251F3D26145D8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB86BD83D8226E43667D24D14BB83926 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3825E2E520E6B45CC95B558C83884B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E87797C5858CC87A05CC635F83165E /* CoreGraphics.framework in Frameworks */,
+				FDFA9A8E75FE05CCBBE8BFBDC816A9E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E3CBD960E848FABE59A0991A6D6EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C09E53EE4C1EF772E564946F98AB04A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39CF33B2E976FD3E12A7D9F562B97919 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D66F2FB8848FB09E77499C840085B18 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7903734646EEBF8EFBB5A9AE13551726 /* UARTManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		39CF33B2E976FD3E12A7D9F562B97919 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				20B800331D522E9DCC03AABBAE5E1AE5 /* CoreGraphics.framework */,
+				3AC582F8F07ADF154C1C36403D53BE14 /* Foundation.framework */,
+				776C8C6FA91DC26A941A9FD044716055 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3E1C92122D31A5776577F627748C43BD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0CA4E9C04FC04C5B9F1AAFF5DF493BCF /* MBProgressHUD.h */,
+				1194E1A7740E08E1BD4FD96F85A756A4 /* MBProgressHUD.m */,
+				B7754C4DC29BA065A31096C74436ECE3 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		3FB3F42BC16790CFC01EDA98680B26FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8542E5CAEC34968406D03933036AC629 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		5836A44A75C427EBF4739C55E2315758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E1C92122D31A5776577F627748C43BD /* MBProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7903734646EEBF8EFBB5A9AE13551726 /* UARTManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FB3F42BC16790CFC01EDA98680B26FF /* Pod */,
+				B3C9223A92D7CDF912B0BCB85AB9EA6A /* Support Files */,
+			);
+			name = UARTManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				2D66F2FB8848FB09E77499C840085B18 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				5836A44A75C427EBF4739C55E2315758 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				CDAC1A69CD91D68A262992160BC5FBDD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8542E5CAEC34968406D03933036AC629 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F94F8049D01AB8DEA9365B0F0F3D079F /* CBPeripheral+UART.h */,
+				C3727874370CE1B8F05538CE263C702B /* NSError+UART.h */,
+				C81BA0B6B60915786892F9755F834152 /* NSError+UART.m */,
+				DF5989A8BE6D9EAF429940B25EC1A931 /* UARTCommand.h */,
+				44B11288950B14595CCF9C01EB392BEE /* UARTCommand.m */,
+				1DC463C01018D684448DDB09B51DCA7E /* UARTConstants.h */,
+				549C95F3F906B1A0B8F06044D5B43141 /* UARTConstants.m */,
+				43499EDA03176B408376164918BF0FC5 /* UARTManager.h */,
+				CFC43D4F9511D8F5593F2EE250127B23 /* UARTManager.m */,
+				3FD1C866C1B6B8D659AB7E7A50A37D33 /* UARTPacket.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		94142BD8ABC52C6133D16E685B855881 /* Pods-UARTManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A42108D5DF4CD061441F9A7235ED7D14 /* Info.plist */,
+				A231C3524332E87C15E3210F9C3D37B6 /* Pods-UARTManager_Example.modulemap */,
+				E4EA13D0AB92F85611F474241D138FFA /* Pods-UARTManager_Example-acknowledgements.markdown */,
+				97CDB5A17B6E188FFB33BE45A426C5DA /* Pods-UARTManager_Example-acknowledgements.plist */,
+				8396F6E06162D0A3E77D6B82D81ECE90 /* Pods-UARTManager_Example-dummy.m */,
+				11E4FA8DA6DD01CB4A100BF4D1F5B88A /* Pods-UARTManager_Example-frameworks.sh */,
+				9DFA26BD511454EB185141704762FBC1 /* Pods-UARTManager_Example-resources.sh */,
+				6B80FC398A2010C10175C6FD3E8D4901 /* Pods-UARTManager_Example-umbrella.h */,
+				5D7CB798E29637C8E4CE797A2A10BBE4 /* Pods-UARTManager_Example.debug.xcconfig */,
+				1DB83388576F6C3918F5AEEE99D4940D /* Pods-UARTManager_Example.release.xcconfig */,
+			);
+			name = "Pods-UARTManager_Example";
+			path = "Target Support Files/Pods-UARTManager_Example";
+			sourceTree = "<group>";
+		};
+		B3C9223A92D7CDF912B0BCB85AB9EA6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AEC95244AA2919CEDDA0F832FDDA4E5 /* Info.plist */,
+				034E36FF60A5B6BBC5522E4B147D579B /* UARTManager.modulemap */,
+				66705BE9DEC3835F581D8085F8216C95 /* UARTManager.xcconfig */,
+				B536CF2E4E043085FA5EB7491E8AD3B3 /* UARTManager-Private.xcconfig */,
+				78C76DEF976F893F4DFFADC425F5D4C2 /* UARTManager-dummy.m */,
+				FB06472909A71EE8CC42D35C3B6CB60A /* UARTManager-prefix.pch */,
+				7A2042CF6AE04B4C73FE1046FC117BF1 /* UARTManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/UARTManager";
+			sourceTree = "<group>";
+		};
+		B7754C4DC29BA065A31096C74436ECE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E8A11E2DC9443E0815995541AEF4E2 /* Info.plist */,
+				963338C5854A5CD11E4C4E05749B0F59 /* MBProgressHUD.modulemap */,
+				942506CAA83C096394CEF67D1546656C /* MBProgressHUD.xcconfig */,
+				DC62240A8802C163125BC943254B5DCE /* MBProgressHUD-Private.xcconfig */,
+				36925BA4F58387C756700504E2473784 /* MBProgressHUD-dummy.m */,
+				48E3CCA8B1517B279D0E8E60C4757489 /* MBProgressHUD-prefix.pch */,
+				6C9690ECD193B7DAD3753F308637A549 /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B62DE59E1C321DF76D389F1A62E6026E /* MBProgressHUD.framework */,
+				12E9CE69EBFE8DF6DF218721F01EFEF3 /* Pods_UARTManager_Example.framework */,
+				C9D33AE49385292F1B200035888EEC19 /* Pods_UARTManager_Tests.framework */,
+				500EB79D14E331FF2550F618B12D7BE0 /* UARTManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDAC1A69CD91D68A262992160BC5FBDD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94142BD8ABC52C6133D16E685B855881 /* Pods-UARTManager_Example */,
+				F47C5CC358B4927274A289A509910B18 /* Pods-UARTManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F47C5CC358B4927274A289A509910B18 /* Pods-UARTManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				158262D2ACC70FA0863C428381F2140B /* Info.plist */,
+				FEFA1FBB919967AE39A59F11C8600373 /* Pods-UARTManager_Tests.modulemap */,
+				596CF5ED04E40DA98AB0D9ABE356DAC6 /* Pods-UARTManager_Tests-acknowledgements.markdown */,
+				620C6FFC43DB91D0CFBCC6CD503DD674 /* Pods-UARTManager_Tests-acknowledgements.plist */,
+				635A4B5180BC8437B164860DAF3DB3A4 /* Pods-UARTManager_Tests-dummy.m */,
+				D0FE8D4B0235B1FBE98CAD82E8BA77C1 /* Pods-UARTManager_Tests-frameworks.sh */,
+				C16771BD569DB8585E3ABD920E4B3C68 /* Pods-UARTManager_Tests-resources.sh */,
+				847C51158CBA0CEC24966B5BADD3C516 /* Pods-UARTManager_Tests-umbrella.h */,
+				B7C38E928A06F57A581319F5C59E0E10 /* Pods-UARTManager_Tests.debug.xcconfig */,
+				3FD53F095A07D7FED0B14383337B4133 /* Pods-UARTManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-UARTManager_Tests";
+			path = "Target Support Files/Pods-UARTManager_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11ABBA4FB3DC62428C3E5137748DE382 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1466BC2BC27BB92662462D1BB9EEC40 /* CBPeripheral+UART.h in Headers */,
+				C2F48CD281B9CCE8CF4B585B76220889 /* NSError+UART.h in Headers */,
+				03BA17A54610610CCF1CD6B4D93358F3 /* UARTCommand.h in Headers */,
+				0457647319738BE930B9CAC5CDF63B1F /* UARTConstants.h in Headers */,
+				788A37F097771A3507BC35DE5740AB7F /* UARTManager-umbrella.h in Headers */,
+				4FE8660947738D2131EF2ACD363BEDE5 /* UARTManager.h in Headers */,
+				D391F325D670782F2146D777EEF7A622 /* UARTPacket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4204EBC43EFB24B2FC7812EE2A76C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6723E9C02FC0BBB8C55DCDC694AB49AA /* Pods-UARTManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873302ABCC8C6948BCC987B3A063994F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A45011CCA99CD8B3536A4ECC00D91F /* Pods-UARTManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE06985BD070B3A52F6E03CE76C7E568 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3847FE41DC41DCB4149500A6AC8289E0 /* MBProgressHUD-umbrella.h in Headers */,
+				572D227394D6161C53F302281405F128 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A9B8B980E1D12639475FD73CDCDC78B /* UARTManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFD82E58160A55BFF11818D6DABE75B /* Build configuration list for PBXNativeTarget "UARTManager" */;
+			buildPhases = (
+				8851E5B8B29A6FDFC8EA8F5266F8EA14 /* Sources */,
+				4B3B00903DFDB561F3AA499E839A5D84 /* Frameworks */,
+				11ABBA4FB3DC62428C3E5137748DE382 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UARTManager;
+			productName = UARTManager;
+			productReference = 500EB79D14E331FF2550F618B12D7BE0 /* UARTManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1714AAA6234387D5B99C3C500F946829 /* Pods-UARTManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6431B38170E889F100F4CEE4D4139F60 /* Build configuration list for PBXNativeTarget "Pods-UARTManager_Tests" */;
+			buildPhases = (
+				24D638569B6A3AFB6F0B393DE9AFA05E /* Sources */,
+				C36147C235D2DC7A7251F3D26145D8D0 /* Frameworks */,
+				4C4204EBC43EFB24B2FC7812EE2A76C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C5A3B844C9A2B4D3C6C80CA96E7C10B /* PBXTargetDependency */,
+			);
+			name = "Pods-UARTManager_Tests";
+			productName = "Pods-UARTManager_Tests";
+			productReference = C9D33AE49385292F1B200035888EEC19 /* Pods_UARTManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23887CF4A87C1E42F56BF54B1E2A723F /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C10014DA37E3174EF4DA43EC7C4111C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				461508DCABEE09AA97B497DE995B6B93 /* Sources */,
+				D3825E2E520E6B45CC95B558C83884B2 /* Frameworks */,
+				AE06985BD070B3A52F6E03CE76C7E568 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = B62DE59E1C321DF76D389F1A62E6026E /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		292F69BCFCE24AE46D644D85F6CE7EAB /* Pods-UARTManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF74CF30C91F7E28B80454E7FD93117 /* Build configuration list for PBXNativeTarget "Pods-UARTManager_Example" */;
+			buildPhases = (
+				3D11309FFC97E4CF8670579F86A9D608 /* Sources */,
+				F9E3CBD960E848FABE59A0991A6D6EC3 /* Frameworks */,
+				873302ABCC8C6948BCC987B3A063994F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D78265A389546AC9C32ED0D520F5E67 /* PBXTargetDependency */,
+				34028F0E28A10E0B07482CE4177830A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-UARTManager_Example";
+			productName = "Pods-UARTManager_Example";
+			productReference = 12E9CE69EBFE8DF6DF218721F01EFEF3 /* Pods_UARTManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23887CF4A87C1E42F56BF54B1E2A723F /* MBProgressHUD */,
+				292F69BCFCE24AE46D644D85F6CE7EAB /* Pods-UARTManager_Example */,
+				1714AAA6234387D5B99C3C500F946829 /* Pods-UARTManager_Tests */,
+				0A9B8B980E1D12639475FD73CDCDC78B /* UARTManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D638569B6A3AFB6F0B393DE9AFA05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E341CD71DD58FE70BCE1D3D4A8E533 /* Pods-UARTManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11309FFC97E4CF8670579F86A9D608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18423D5FB44712E24D73B138EBED8792 /* Pods-UARTManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461508DCABEE09AA97B497DE995B6B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F20041805D54B66469364D9E621A23 /* MBProgressHUD-dummy.m in Sources */,
+				81C56E38455BF734B4FE25BEAD2B795F /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8851E5B8B29A6FDFC8EA8F5266F8EA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407089C1B0442D25372DDEB848C9BC07 /* NSError+UART.m in Sources */,
+				ED39166B549C611C79F882119C3C544B /* UARTCommand.m in Sources */,
+				26AE7901FAB71169A2CF160EACCA6772 /* UARTConstants.m in Sources */,
+				3F5FCF07125D09B3B1F173C268057D31 /* UARTManager-dummy.m in Sources */,
+				0B93FD2115C231F971FAB16016158540 /* UARTManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34028F0E28A10E0B07482CE4177830A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UARTManager;
+			target = 0A9B8B980E1D12639475FD73CDCDC78B /* UARTManager */;
+			targetProxy = A4F39DEB9C34AFAF3E95E102A5610428 /* PBXContainerItemProxy */;
+		};
+		6D78265A389546AC9C32ED0D520F5E67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 23887CF4A87C1E42F56BF54B1E2A723F /* MBProgressHUD */;
+			targetProxy = C24235599C1951E0EB22732D3F7B3E00 /* PBXContainerItemProxy */;
+		};
+		7C5A3B844C9A2B4D3C6C80CA96E7C10B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UARTManager;
+			target = 0A9B8B980E1D12639475FD73CDCDC78B /* UARTManager */;
+			targetProxy = CFC0BC5FFCA9B8296C6D76DDF6D83CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BC2CB4BA065EA76A6DC4DD04C3806B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB83388576F6C3918F5AEEE99D4940D /* Pods-UARTManager_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UARTManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-UARTManager_Example/Pods-UARTManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UARTManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23E99D2B9FD6213C96B5328134DAA784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC62240A8802C163125BC943254B5DCE /* MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.9.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.9.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24D1EA2053707F2A79FF616651580499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC62240A8802C163125BC943254B5DCE /* MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.9.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.9.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6DB789184DDB02A99DE699FD0B08BDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C38E928A06F57A581319F5C59E0E10 /* Pods-UARTManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UARTManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-UARTManager_Tests/Pods-UARTManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UARTManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97C0B8653503CAEDE69030B1AC526536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD53F095A07D7FED0B14383337B4133 /* Pods-UARTManager_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UARTManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-UARTManager_Tests/Pods-UARTManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UARTManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E69B513D2278DACBCAC697B94E82B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B536CF2E4E043085FA5EB7491E8AD3B3 /* UARTManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UARTManager/UARTManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UARTManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UARTManager/UARTManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UARTManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A286A4589E594ED735EFB7F6425146F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7CB798E29637C8E4CE797A2A10BBE4 /* Pods-UARTManager_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UARTManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-UARTManager_Example/Pods-UARTManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_UARTManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E73EB16F708C357808D0EF8304DFFB11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B536CF2E4E043085FA5EB7491E8AD3B3 /* UARTManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UARTManager/UARTManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UARTManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UARTManager/UARTManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UARTManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6431B38170E889F100F4CEE4D4139F60 /* Build configuration list for PBXNativeTarget "Pods-UARTManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB789184DDB02A99DE699FD0B08BDAF /* Debug */,
+				97C0B8653503CAEDE69030B1AC526536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C10014DA37E3174EF4DA43EC7C4111C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D1EA2053707F2A79FF616651580499 /* Debug */,
+				23E99D2B9FD6213C96B5328134DAA784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFD82E58160A55BFF11818D6DABE75B /* Build configuration list for PBXNativeTarget "UARTManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E69B513D2278DACBCAC697B94E82B9C /* Debug */,
+				E73EB16F708C357808D0EF8304DFFB11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF74CF30C91F7E28B80454E7FD93117 /* Build configuration list for PBXNativeTarget "Pods-UARTManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A286A4589E594ED735EFB7F6425146F2 /* Debug */,
+				0BC2CB4BA065EA76A6DC4DD04C3806B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
