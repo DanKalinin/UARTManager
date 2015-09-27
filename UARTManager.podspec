@@ -25,12 +25,12 @@ s.description      = <<-DESC
                      * Command roundtrip time measurement with up to nanosecond accuracy. Precise system timing functions are used for that.
                      * Modern API providing flexible mechanism of callbacks based on blocks, notifications and delegates. It's up to you which pattern to use.
                      DESC
-s.screenshots      = "https://www.dropbox.com/s/hbvnesrpfglf737/Home.PNG",
-                     "https://www.dropbox.com/s/x73kv0o0xk9lc12/Add%20command.PNG",
-                     "https://www.dropbox.com/s/ufmpa3qd1t18gkd/Commands.PNG",
-                     "https://www.dropbox.com/s/sc5e5c4497vbd6g/Results.PNG",
-                     "https://www.dropbox.com/s/181xnwt646gt2ma/Failure%20reason.PNG",
-                     "https://www.dropbox.com/s/y56cac7o92duw23/Settings.PNG"
+s.screenshots      = "https://dl.dropbox.com/s/6ffpukyf2fbiugk/Home.PNG",
+                     "https://dl.dropbox.com/s/z1xfqureesbwns4/Add%20command.PNG",
+                     "https://dl.dropbox.com/s/ufqpttrr90n8lrw/Commands.PNG",
+                     "https://dl.dropbox.com/s/50l5hmvvk0e7usx/Results.PNG",
+                     "https://dl.dropbox.com/s/wfz84hkgt0de4mp/Failure%20reason.PNG",
+                     "https://dl.dropbox.com/s/ielmi7hnbgjeb84/Settings.PNG"
 
 # Platform
 s.platform     = :ios, '8.0'
