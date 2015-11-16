@@ -83,6 +83,31 @@ NSArray *array = @[@2, @4, @8, @16, @32, @64, @128, @255];
 UARTPacket *packet = [UARTPacket packetWithArray:array];
 ```
 
+To write created packet to peripheral's RX characteristic without response add the following line of code:
+
+```objc
+[peripheral writePacket:packet];
+```
+
+If you need to receive the answer to sent packet just incapsulate `UARTPacket` to `UARTCommand` object and send it to peripheral:
+
+```objc
+UARTCommand *command = [UARTCommand new];
+command.TXPacket = packet;
+[command sendToPeripheral:peripheral success:^(UARTCommand *command) {
+
+    NSLog(@"Received packet - %@", command.RXPacket.array);
+    NSLog(@"Roundtrip time - %llu", command.time);
+    
+} failure:^(UARTCommand *command) {
+
+    NSLog(@"Error sending command - %@", command.error);
+    
+} completion:^(UARTCommand *command) {
+        
+} timeout:1.0];
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
