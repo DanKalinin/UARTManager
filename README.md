@@ -1,9 +1,6 @@
 # UARTManager
 
-[![CI Status](http://img.shields.io/travis/DanKalinin/UARTManager.svg?style=flat)](https://travis-ci.org/DanKalinin/UARTManager)
-[![Version](https://img.shields.io/cocoapods/v/UARTManager.svg?style=flat)](http://cocoapods.org/pods/UARTManager)
-[![License](https://img.shields.io/cocoapods/l/UARTManager.svg?style=flat)](http://cocoapods.org/pods/UARTManager)
-[![Platform](https://img.shields.io/cocoapods/p/UARTManager.svg?style=flat)](http://cocoapods.org/pods/UARTManager)
+UART-communication library over Bluetooth.
 
 ## Description
 
@@ -109,6 +106,9 @@ command.TXPacket = packet;
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+* iOS 7 and later
+* ARC
 
 ## Installation
 
