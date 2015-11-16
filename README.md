@@ -24,6 +24,32 @@ First set up the central manager object which `UARTManager` will be use to commu
 [UARTManager manager].cm = [[CBCentralManager alloc] initWithDelegate:nil queue:dispatch_get_main_queue() options:@{CBCentralManagerOptionRestoreIdentifierKey : @"My Central Manager"}];
 ```
 
+Next start scan for peripherals from any application's view controller:
+
+```objc
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.peripherals = [NSMutableSet set];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didDiscoverPeripheral:) name:UARTManagerDidDiscoverPeripheralNotification object:nil];
+    [[UARTManager manager].cm scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:UARTServiceUUID]] options:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UARTManagerDidDiscoverPeripheralNotification object:nil];
+    [[UARTManager manager].cm stopScan];
+}
+
+- (void)didDiscoverPeripheral:(NSNotification *)note {
+    CBPeripheral *peripheral = note.userInfo[UARTPeripheralKey];
+    [self.peripherals addObject:peripheral];
+}
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
