@@ -94,17 +94,14 @@ If you need to receive the answer to sent packet just incapsulate `UARTPacket` t
 ```objc
 UARTCommand *command = [UARTCommand new];
 command.TXPacket = packet;
-[command sendToPeripheral:peripheral success:^(UARTCommand *command) {
 
+[command sendToPeripheral:peripheral success:^(UARTCommand *command) {
     NSLog(@"Received packet - %@", command.RXPacket.array);
     NSLog(@"Roundtrip time - %llu", command.time);
-    
 } failure:^(UARTCommand *command) {
-
     NSLog(@"Error sending command - %@", command.error);
-    
 } completion:^(UARTCommand *command) {
-        
+    
 } timeout:1.0];
 ```
 
