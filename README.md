@@ -15,6 +15,7 @@ Features:
 * Library provides `UARTCommand` class allowing to easy implement own command system by overriding `- isRXPacket:responseToTXPacket:` method.
 * Command roundtrip time measurement with up to nanosecond accuracy. Precise system timing functions are used for that.
 * Modern API providing flexible mechanism of callbacks based on blocks, notifications and delegates. It's up to you which pattern to use.
+* Up to 10 concurrent peripheral connections are supported.
 
 ## Usage
 
@@ -71,7 +72,7 @@ peripheral.TXCharacteristicUUID = [CBUUID UUIDWithString:@"6E400003-B5A3-F393-E0
 peripheral.RXCharacteristicUUID = [CBUUID UUIDWithString:@"6E400002-B5A3-F393-E0A9-E50E24DCCA9E"];
 ```
 
-Next prepare the packet for sending to connected peripherals. They can be created either with raw data or with array of bytes (0-255).
+Next prepare the packet for sending to connected peripheral. They can be created either with raw data or with array of bytes (0-255).
 
 ```objc
 NSData *data = [@"Hello World" dataUsingEncoding:NSASCIIStringEncoding];
