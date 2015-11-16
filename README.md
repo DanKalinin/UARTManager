@@ -50,6 +50,39 @@ Next start scan for peripherals from any application's view controller:
 }
 ```
 
+When needed peripheral is discovered - connect to it. The connection process includes discovering of UART service and TX, RX characteristics, so you don't need to write extra code to discover them. Connection timeout can be also specified.
+
+```objc
+[peripheral connectWithSuccess:^(CBPeripheral *peripheral) {
+    // Peripheral is ready to receive packets   
+} failure:^(CBPeripheral *peripheral) {
+    // Error while connecting, discovering TX, RX characheristics or specified timeout expiration
+    NSLog(@"Error connecting to peripheral - %@", peripheral.error);
+} completion:^(CBPeripheral *peripheral) {
+    // Called anyway if connection is either established or failed
+} timeout:1.0];
+```
+
+Optionally you can configure UART service and TX, RX characteristics UUIDs before connecting to peripheral. By default these values equal to `UARTServiceUUID`, `UARTTXCharacteristicUUID` and `UARTRXCharacteristicUUID` which corresponds to Nordic standard UART profile configuration.
+
+```objc
+peripheral.serviceUUID = [CBUUID UUIDWithString:@"6E400001-B5A3-F393-E0A9-E50E24DCCA9E"];
+peripheral.TXCharacteristicUUID = [CBUUID UUIDWithString:@"6E400003-B5A3-F393-E0A9-E50E24DCCA9E"];
+peripheral.RXCharacteristicUUID = [CBUUID UUIDWithString:@"6E400002-B5A3-F393-E0A9-E50E24DCCA9E"];
+```
+
+Next prepare the packet for sending to connected peripherals. They can be created either with raw data or with array of bytes (0-255).
+
+```objc
+NSData *data = [@"Hello World" dataUsingEncoding:NSASCIIStringEncoding];
+UARTPacket *packet = [UARTPacket packetWithData:data];
+```
+
+```objc
+NSArray *array = @[@2, @4, @8, @16, @32, @64, @128, @255];
+UARTPacket *packet = [UARTPacket packetWithArray:array];
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
