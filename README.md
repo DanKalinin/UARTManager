@@ -58,7 +58,7 @@ When needed peripheral is discovered - connect to it. The connection process inc
     // Peripheral is ready to receive packets   
 } failure:^(CBPeripheral *peripheral) {
     // Error while connecting, discovering TX, RX characheristics or specified timeout expiration
-    NSLog(@"Error connecting to peripheral - %@", peripheral.error);
+    NSLog(@"Connection error - %@", peripheral.error);
 } completion:^(CBPeripheral *peripheral) {
     // Called anyway if connection is either established or failed
 } timeout:1.0];
@@ -100,7 +100,7 @@ command.TXPacket = packet;
     NSLog(@"Received packet - %@", command.RXPacket.array);
     NSLog(@"Roundtrip time - %llu", command.time);
 } failure:^(UARTCommand *command) {
-    NSLog(@"Error sending command - %@", command.error);
+    NSLog(@"Command error - %@", command.error);
 } completion:^(UARTCommand *command) {
     
 } timeout:1.0];
