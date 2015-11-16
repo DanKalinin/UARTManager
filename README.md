@@ -18,6 +18,12 @@ Features:
 
 ## Usage
 
+First set up the central manager object which `UARTManager` will be use to communicate with peripherals. Add the next line to `- application:didFinishLaunchingWithOptions:` method of `AppDelegate`:
+
+```objc
+[UARTManager manager].cm = [[CBCentralManager alloc] initWithDelegate:nil queue:dispatch_get_main_queue() options:@{CBCentralManagerOptionRestoreIdentifierKey : @"My Central Manager"}];
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
