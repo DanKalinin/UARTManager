@@ -326,7 +326,9 @@
                     }
                     break;
                 case CBPeripheralStateDisconnected:
+#ifdef __IPHONE_9_0
                 case CBPeripheralStateDisconnecting:
+#endif
                     if ([[[UARTManager manager].cm retrievePeripheralsWithIdentifiers:@[self.identifier]] containsObject:self]) {
                         [[UARTManager manager].cm connectPeripheral:self options:nil];
                     } else if ([[[UARTManager manager].cm retrieveConnectedPeripheralsWithServices:@[self.data.serviceUUID]] containsObject:self]) {
