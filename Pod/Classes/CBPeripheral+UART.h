@@ -20,7 +20,7 @@ typedef void (^UARTPeripheralHandler)(__kindof CBPeripheral *);
 @property CBUUID *serviceUUID;
 @property CBUUID *TXCharacteristicUUID;
 @property CBUUID *RXCharacteristicUUID;
-@property (readonly) NSError *error;
+@property (readonly, nullable) NSError *error;
 @property NSInteger maxPacketSize;
 - (void)connectWithSuccess:(nullable UARTPeripheralHandler)success failure:(nullable UARTPeripheralHandler)failure completion:(nullable UARTPeripheralHandler)completion timeout:(NSTimeInterval)timeout;
 - (BOOL)writePacket:(UARTPacket *)packet;

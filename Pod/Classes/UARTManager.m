@@ -137,6 +137,14 @@
 }
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
+    
+    if (central.state != CBCentralManagerStatePoweredOn) {
+        for (CBPeripheral *peripheral in self.peripheralData.allKeys) {
+            peripheral.data.error = [NSError UARTCentralManagerStateError];
+            [peripheral finishWithSuccess:NO];
+        }
+    }
+    
     [self.cmDelegate centralManagerDidUpdateState:central];
     [[NSNotificationCenter defaultCenter] postNotificationName:UARTManagerDidUpdateStateNotification object:self];
 }
