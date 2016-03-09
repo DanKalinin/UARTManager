@@ -18,8 +18,14 @@ typedef void (^UARTCommandHandler)(__kindof UARTCommand *);
 
 @property (readonly, nullable) UARTPacket *RXPacket;
 @property UARTPacket *TXPacket;
+@property NSInteger priority;
+@property BOOL deletePrevious;
+@property (readonly) BOOL executing;
 @property (readonly, nullable) NSError *error;
 @property (readonly) uint64_t time;
+@property (readonly) NSInteger seq;
+
+- (BOOL)isEqualToCommand:(UARTCommand *)command;
 - (BOOL)isRXPacket:(UARTPacket *)RXPacket responseToTXPacket:(UARTPacket *)TXPacket;
 - (void)sendToPeripheral:(CBPeripheral *)peripheral success:(nullable UARTCommandHandler)success failure:(nullable UARTCommandHandler)failure completion:(nullable UARTCommandHandler)completion timeout:(NSTimeInterval)timeout;
 
